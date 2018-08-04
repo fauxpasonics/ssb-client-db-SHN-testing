@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [ro].[vw_DimPriceCode] as 
+(
+	SELECT * FROM dbo.DimPriceCode_V2 (NOLOCK)
+)
+GO

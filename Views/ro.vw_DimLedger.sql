@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [ro].[vw_DimLedger] as 
+(
+	SELECT * FROM dbo.DimLedger_V2 (NOLOCK)
+)
+GO

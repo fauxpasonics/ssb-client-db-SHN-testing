@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [etl].[vw_DimEvent] as 
+(
+	SELECT * FROM dbo.DimEvent_V2
+)
+GO

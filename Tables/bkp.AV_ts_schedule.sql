@@ -1,0 +1,30 @@
+CREATE TABLE [bkp].[AV_ts_schedule]
+(
+[audit_datetime] [datetime] NULL,
+[schedule_record_state] [int] NOT NULL,
+[schedule_audit_id] [uniqueidentifier] NOT NULL,
+[schedule_create_audit_id] [uniqueidentifier] NULL,
+[schedule_association] [nvarchar] (128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_id] [uniqueidentifier] NOT NULL,
+[schedule_start] [datetime] NULL,
+[schedule_end] [datetime] NULL,
+[schedule_time] [datetime] NULL,
+[schedule_option] [int] NULL,
+[schedule_task_id] [uniqueidentifier] NOT NULL,
+[schedule_day_of_week] [bigint] NULL,
+[schedule_day_of_month] [bigint] NULL,
+[schedule_type] [int] NOT NULL,
+[schedule_correspondence_id] [uniqueidentifier] NULL,
+[schedule_target] [nvarchar] (128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_targetname] [nvarchar] (512) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_subject] [nvarchar] (128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_message] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_executed] [datetime] NULL,
+[schedule_back_priority] [int] NULL,
+[schedule_version] [int] NOT NULL,
+[schedule_username] [nvarchar] (128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_password] [nvarchar] (128) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[schedule_filename] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_Sync_DeltaHashKey] [binary] (32) NULL
+)
+GO

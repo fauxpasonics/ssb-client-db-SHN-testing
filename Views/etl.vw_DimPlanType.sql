@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [etl].[vw_DimPlanType] as 
+(
+	SELECT * FROM dbo.DimPlanType_V2
+)
+GO
